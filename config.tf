@@ -14,7 +14,7 @@ provider "yandex" {
    zone               = "ru-central1-d"
 }
 resource "yandex_compute_instance" "instance-based-on-coi" {
-  name        = "test2"
+  name        = "test"
   platform_id = "standard-v3"
 
   resources {
@@ -24,7 +24,7 @@ resource "yandex_compute_instance" "instance-based-on-coi" {
 
   boot_disk {
     initialize_params {
-      image_id = "fd8vmcue7aajpmeo39kk" //ubuntu-2004-lts
+      image_id = "fd8vmcue7aajpmeo39kk" 
       size     = 10
     }
   }
